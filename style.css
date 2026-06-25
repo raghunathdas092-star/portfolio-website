@@ -176,13 +176,11 @@ color:#38bdf8;
 
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
 
     padding:80px;
 
-    min-height:calc(100vh - 90px);
+    min-height:75vh;
 
 }
 
@@ -190,15 +188,21 @@ color:#38bdf8;
 
     width:55%;
 
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
 }
 
 .hero-text h1{
 
-    font-size:72px;
+    font-size:65px;
 
-    line-height:1.2;
+    line-height:1.0;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
@@ -210,9 +214,9 @@ color:#38bdf8;
 
 .hero-text h2{
 
-    font-size:42px;
+    font-size:35px;
 
-    margin-bottom:25px;
+    margin-bottom:10px;
 
     font-weight:700;
 
@@ -234,41 +238,39 @@ color:#38bdf8;
 
     display:inline-block;
 
-    margin-top:12px;
+    width:fit-content;
+
+    margin-top:0;
 
     margin-bottom:12px;
 
-    padding:8px 18px;
+    padding:8px 8px;
 
     border:1px solid rgba(56,189,248,.3);
 
     border-radius:12px;
 
     background:rgba(56,189,248,.08);
-
-    color:#9ddcff;
-
-    font-size:18px;
-
-    font-weight:500;
-
 }
 
 .hero-description{
 
-    margin-top:10px;
+    margin:0;
 
-    line-height:1.8;
+    font-size:20px;
 
+    line-height:1.7;
+
+    max-width:620px;
 }
 
 .buttons{
 
-    margin-top:40px;
+    margin-top:30px;
 
     display:flex;
 
-    gap:20px;
+    gap:15px;
 
 }
 
@@ -408,11 +410,11 @@ transform:translateY(-4px);
 
     justify-content:center;
 
-    gap:20px;
+    gap:15px;
 
-    margin-top:40px;
+    margin-top:25px;
 
-    margin-bottom:50px;
+    margin-bottom:20px;
 
 }
 
