@@ -184,18 +184,18 @@ color:#38bdf8;
 
     padding: 60px 100px;
 
-    gap: 120px;
+    gap: 100px;
 }
 
 .hero-text{
 
-    width:45%;
+    width:50%;
 
     display:flex;
 
     flex-direction:column;
 
-    justify-content:flex-end;
+    justify-content:center;
 
 }
 
@@ -831,5 +831,127 @@ transition:.3s;
 .project-buttons a:hover{
 
 background:white;
+
+}
+
+/* ===========================
+   EXPERIENCE SECTION
+=========================== */
+
+.experience{
+
+    padding:100px 90px;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#38bdf8;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-left:60px;
+
+    margin-bottom:60px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:8px;
+
+    top:10px;
+
+    width:22px;
+
+    height:22px;
+
+    background:#38bdf8;
+
+    border-radius:50%;
+
+    border:4px solid #0f172a;
+
+}
+
+.timeline-content{
+
+    background:#1f2937;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+    border:1px solid rgba(56,189,248,.2);
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#38bdf8;
+
+    box-shadow:0 0 25px rgba(56,189,248,.25);
+
+}
+
+.timeline-date{
+
+    color:#38bdf8;
+
+    font-weight:bold;
+
+}
+
+.timeline-content h3{
+
+    margin-top:10px;
+
+    font-size:28px;
+
+}
+
+.timeline-content h4{
+
+    margin:10px 0;
+
+    color:#cbd5e1;
+
+}
+
+.timeline-content p{
+
+    line-height:1.8;
 
 }
