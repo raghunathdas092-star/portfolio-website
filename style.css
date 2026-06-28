@@ -628,16 +628,6 @@ transform:translateY(-4px);
 
 }
 
-.skill-card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:#38bdf8;
-
-    box-shadow:0 0 25px rgba(56,189,248,.25);
-
-}
-
 .skill-card h3{
 
     color:#38bdf8;
@@ -729,20 +719,6 @@ transition:.4s;
 cursor:pointer;
 
 border:1px solid rgba(56,189,248,.15);
-
-}
-
-.project-card:hover{
-
-transform:
-
-translateY(-10px)
-
-scale(1.02);
-
-box-shadow:0 15px 40px rgba(0,0,0,.3);
-
-border-color:#38bdf8;
 
 }
 
@@ -930,16 +906,6 @@ background:white;
 
 }
 
-.timeline-content:hover{
-
-    transform:translateY(-6px);
-
-    border-color:#38bdf8;
-
-    box-shadow:0 0 25px rgba(56,189,248,.25);
-
-}
-
 .timeline-date{
 
     color:#38bdf8;
@@ -1003,16 +969,6 @@ background:white;
     border:1px solid rgba(56,189,248,.2);
 
     transition:.4s;
-
-}
-
-.certificate-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 0 25px rgba(56,189,248,.25);
-
-    border-color:#38bdf8;
 
 }
 
@@ -1146,77 +1102,6 @@ border-radius:10px;
 
 }
 
-.fullstack{
-
-width:0;
-
-animation:fill80 2s forwards;
-
-}
-
-@keyframes fill80{
-
-to{
-
-width:80%;
-
-}
-
-}
-.ai{
-
-width:0;
-
-animation:fill80 2s forwards;
-
-}
-
-@keyframes fill80{
-
-to{
-
-width:80%;
-
-}
-
-}
-
-.cyber{
-
-width:0;
-
-animation:fill80 2s forwards;
-
-}
-
-@keyframes fill80{
-
-to{
-
-width:80%;
-
-}
-
-}
-
-.dsa{
-
-width:0;
-
-animation:fill80 2s forwards;
-
-}
-
-@keyframes fill80{
-
-to{
-
-width:80%;
-
-}
-
-}
-
 
 /* ==========================
    PROFESSIONAL GROWTH
@@ -1263,14 +1148,6 @@ border-radius:20px;
 text-align:center;
 
 transition:.4s;
-
-}
-
-.growth-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 0 25px rgba(56,189,248,.25);
 
 }
 
@@ -1324,12 +1201,6 @@ transition:.4s;
 
 }
 
-.achievement-card:hover{
-
-transform:translateY(-8px);
-
-}
-
 .learning-item{
 
 margin-bottom:30px;
@@ -1361,27 +1232,47 @@ background:#38bdf8;
 }
 
 .fullstack{
+    width:0;
+    animation:fill75 2s forwards;
+}
 
-width:80%;
-
+@keyframes fill75{
+    to{
+        width:75%;
+    }
 }
 
 .ai{
+    width:0;
+    animation:fill65 2s forwards;
+}
 
-width:70%;
-
+@keyframes fill65{
+    to{
+        width:65%;
+    }
 }
 
 .cyber{
+    width:0;
+    animation:fill60 2s forwards;
+}
 
-width:60%;
-
+@keyframes fill60{
+    to{
+        width:60%;
+    }
 }
 
 .dsa{
+    width:0;
+    animation:fill45 2s forwards;
+}
 
-width:50%;
-
+@keyframes fill45{
+    to{
+        width:45%;
+    }
 }
 
 .career-goal{
@@ -1453,14 +1344,6 @@ border-radius:15px;
 margin:20px 0;
 
 transition:.4s;
-
-}
-
-.contact-card:hover{
-
-transform:translateX(8px);
-
-border-left:5px solid #38bdf8;
 
 }
 
@@ -1669,5 +1552,528 @@ margin:80px auto;
 border-radius:30px;
 
 opacity:.5;
+
+}
+
+/* ===========================
+   LEARNING PROGRESS
+=========================== */
+
+.learning-intro{
+
+text-align:center;
+
+color:#cbd5e1;
+
+max-width:700px;
+
+margin:20px auto 50px;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+.learning-container{
+
+display:flex;
+
+flex-direction:column;
+
+gap:30px;
+
+}
+
+.learning-card{
+
+background:#273445;
+
+padding:25px 30px;
+
+border-radius:22px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.06);
+
+}
+
+.learning-top{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:flex-start;
+
+margin-bottom:20px;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.skill-left{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.skill-icon{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+font-weight:bold;
+
+}
+
+.green{
+
+border:2px solid #22c55e;
+
+color:#22c55e;
+
+}
+
+.orange{
+
+border:2px solid #f59e0b;
+
+color:#f59e0b;
+
+}
+
+.blue{
+
+border:2px solid #3b82f6;
+
+color:#3b82f6;
+
+}
+
+.skill-left h4{
+
+font-size:34px;
+
+margin-bottom:10px;
+
+}
+
+.skill-left p{
+
+color:#a8b0bc;
+
+font-size:17px;
+
+}
+
+.skill-right{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.badge{
+
+padding:10px 18px;
+
+border-radius:30px;
+
+font-weight:600;
+
+font-size:15px;
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+}
+
+.advanced{
+
+background:#16a34a;
+
+color:white;
+
+}
+
+.intermediate{
+
+background:#f59e0b;
+
+color:white;
+
+}
+
+.beginner{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+.percent{
+
+font-size:36px;
+
+font-weight:bold;
+
+}
+
+.green-text{
+
+color:#22c55e;
+
+}
+
+.orange-text{
+
+color:#f59e0b;
+
+}
+
+.blue-text{
+
+color:#3b82f6;
+
+}
+
+.progress{
+
+margin-top:20px;
+
+height:14px;
+
+background:#3c4657;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.progress-bar{
+
+height:100%;
+
+border-radius:20px;
+
+background:linear-gradient(90deg,#38bdf8,#2563eb);
+
+}
+
+.progress-bar{
+
+height:100%;
+
+width:0;
+
+border-radius:20px;
+
+transition:width 1.5s ease;
+
+background:linear-gradient(90deg,#38bdf8,#2563eb);
+
+}
+
+@media (max-width:1024px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:60px;
+
+}
+
+.hero-text{
+
+width:100%;
+
+}
+
+.hero-image img{
+
+transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+transform:scale(1.08);
+
+}
+
+.about{
+
+flex-direction:column;
+
+}
+
+.skills-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.project-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:768px){
+
+nav{
+
+padding:20px;
+
+}
+
+.hero{
+
+padding:50px 25px;
+
+}
+
+.hero-text h1{
+
+font-size:46px;
+
+}
+
+.hero-text h2{
+
+font-size:28px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.btn,
+
+.btn-secondary{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.skills-container{
+
+grid-template-columns:1fr;
+
+}
+
+.project-container{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+padding:50px 25px;
+
+}
+
+.about-info{
+
+grid-template-columns:1fr;
+
+}
+
+.growth-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-text h1{
+
+font-size:36px;
+
+}
+
+.hero-logo{
+
+width:45px;
+
+height:45px;
+
+}
+
+.hero-image img{
+
+width:250px;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.learning-card{
+
+padding:20px;
+
+}
+
+.skill-left{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.skill-right{
+
+justify-content:center;
+
+margin-top:15px;
+
+}
+
+}
+
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0;
+
+background:#38bdf8;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+}
+
+/* ===========================
+   PREMIUM CARD HOVER
+=========================== */
+
+.skill-card,
+.project-card,
+.learning-card,
+.growth-card,
+.timeline-content,
+.certificate-card,
+.contact-card,
+.about-info div{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+}
+
+.skill-card:hover,
+.project-card:hover,
+.learning-card:hover,
+.growth-card:hover,
+.timeline-content:hover,
+.certificate-card:hover,
+.contact-card:hover,
+.about-info div:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+    background:rgba(31,41,55,.70);
+
+	backdrop-filter:blur(14px);
+
+	border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.35),
+        0 0 20px rgba(56,189,248,.25);
+
+}
+
+.counter{
+
+    font-size:52px;
+
+    font-weight:bold;
+
+    color:#38bdf8;
+
+    text-shadow:0 0 20px rgba(56,189,248,.5);
+
+    transition:.3s;
+
+}
+
+.stat:hover .counter{
+
+    transform:scale(1.08);
 
 }

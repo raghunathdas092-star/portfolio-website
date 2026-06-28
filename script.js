@@ -112,3 +112,160 @@ link.classList.add("active");
 
 });
 
+document.querySelectorAll(".learning-card").forEach(card => {
+
+    const bar = card.querySelector(".progress-bar");
+
+    const badge = card.querySelector(".badge");
+
+    const percent = card.querySelector(".percent");
+
+    const value = parseInt(bar.dataset.progress);
+
+    // Fill the progress bar
+    bar.style.width = value + "%";
+
+    // Display percentage
+    percent.textContent = value + "%";
+
+    // Decide badge based on percentage
+
+    if (value >= 80) {
+
+        badge.textContent = "Advanced";
+        badge.className = "badge advanced";
+
+    }
+
+    else if (value >= 65) {
+
+        badge.textContent = "Intermediate";
+        badge.className = "badge intermediate";
+
+    }
+
+    else {
+
+        badge.textContent = "Beginner";
+        badge.className = "badge beginner";
+
+    }
+
+});
+
+window.onscroll=function(){
+
+const scrollTop=document.documentElement.scrollTop;
+
+const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+const scrolled=(scrollTop/height)*100;
+
+document.getElementById("progress-bar").style.width=scrolled+"%";
+
+};
+
+const topBtn=document.querySelector(".top-btn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>300){
+
+topBtn.style.display="flex";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+/* ===========================
+   Animated Statistics Counter
+=========================== */
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            const target = parseInt(counter.dataset.target);
+            const suffix = counter.dataset.suffix || "";
+
+            let current = 0;
+            const increment = Math.max(1, target / 100);
+
+            function updateCounter() {
+
+                if (current < target) {
+
+                    current += increment;
+
+                    if (current > target) current = target;
+
+                    counter.innerText = Math.ceil(current) + suffix;
+
+                    requestAnimationFrame(updateCounter);
+
+                } else {
+
+                    counter.innerText = target + suffix;
+
+                }
+
+            }
+
+            updateCounter();
+
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+}, { threshold: 0.5 });
+
+counters.forEach(counter => {
+
+    counterObserver.observe(counter);
+
+});
+
+if (target === 10) {
+
+    counter.innerText = target + "+";
+
+}
+
+else if (target === 15) {
+
+    counter.innerText = target + "+";
+
+}
+
+else if (target === 100) {
+
+    counter.innerText = target + "%";
+
+}
+
+else if (target === 24) {
+
+    counter.innerText = target + "×7";
+
+}
+
+else {
+
+    counter.innerText = target;
+
+}
+
+const suffix = counter.dataset.suffix || "";
+
+counter.innerText = target + suffix;
