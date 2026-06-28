@@ -64,6 +64,12 @@ entry.target.classList.add("show");
 
 });
 
+window.addEventListener("load",()=>{
+
+document.getElementById("loader").style.display="none";
+
+});
+
 const hiddenElements = document.querySelectorAll(
 
 ".about, .skills, .projects, .experience, .growth, .contact"
@@ -269,3 +275,33 @@ else {
 const suffix = counter.dataset.suffix || "";
 
 counter.innerText = target + suffix;
+
+const modal=document.getElementById("resumeModal");
+
+const resumeBtn=document.querySelector(".btn-secondary");
+
+const closeBtn=document.querySelector(".close");
+
+resumeBtn.onclick=(e)=>{
+
+e.preventDefault();
+
+modal.style.display="block";
+
+};
+
+closeBtn.onclick=()=>{
+
+modal.style.display="none";
+
+};
+
+window.onclick=(e)=>{
+
+if(e.target==modal){
+
+modal.style.display="none";
+
+}
+
+};
